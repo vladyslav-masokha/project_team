@@ -1,0 +1,5 @@
+.sliderBlock {
+	& img {
+		max-height: 50vh !important;
+	}
+}

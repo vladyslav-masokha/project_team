@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Блог - Електронна бібліотека книг</title>
+
+	<!-- Стилі -->
+	<link rel="stylesheet" href="../styles/reset.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+	<!-- js -->
+	<script src="./js/main.js" defer></script>
+</head>
+
+<body>
+	<div id="root">
+		<!-- Шапка -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="headerBody">
+
+					<!-- Логотип -->
+					<h2 class="headerLogo">
+						<img src="https://cdn.icon-icons.com/icons2/2979/PNG/512/book_open_book_read_icon_186989.png" alt="Логотип">
+						<a href="./index.html">Електронна бібліотека книг</a>
+					</h2>
+
+					<!-- Пошук -->
+					<div class="searchBlock">
+						<input type="text" class="fieldSearchBook" placeholder="Пошук">
+
+						<div class="searchBlockOptions">
+							<!-- Елемент пошуку 1 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Великий Гетсбі" - Френсіс Скотт Фіцджеральд
+							</a>
+
+							<!-- Елемент пошуку 2 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Портрет Доріана" - Ґрея Оскар Вайлд
+							</a>
+
+							<!-- Елемент пошуку 3 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Володар мух" - Вільям Ґолдінґ
+							</a>
+
+							<!-- Елемент пошуку 4 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Тягар пристрастей людських" - Сомерсет Моем
+							</a>
+
+							<!-- Елемент пошуку 5 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Потомки солнца" - Хёнгён Сон
+							</a>
+
+							<!-- Елемент пошуку 6 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Потомки солнца" - Хёнгён Сон
+							</a>
+
+							<!-- Елемент пошуку 7 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Автостопом по Галактиці" - Дуглас Адамс
+							</a>
+
+							<!-- Елемент пошуку 8 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"451 градус за Фаренгейтом" - Рей Бредбері
+							</a>
+
+							<!-- Елемент пошуку 9 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Гаррі Поттер" - Джоан Роулінг
+							</a>
+
+							<!-- Елемент пошуку 10 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Тріумфальна арка" - Еріх Марія Ремарк
+							</a>
+
+							<!-- Елемент пошуку 11 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Квіти для Елджернона" - Деніел Кіз
+							</a>
+
+							<!-- Елемент пошуку 12 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Аліса в Країні Чудес" - Льюїс Керрол
+							</a>
+
+							<!-- Елемент пошуку 13 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Гобсек" - Оноре де Бальзак
+							</a>
+
+							<!-- Елемент пошуку 14 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Сумна посмішка" - Франсуаза Саган
+							</a>
+
+							<!-- Елемент пошуку 15 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"П’ять четвертинок апельсина" - Джоан Харріс
+							</a>
+
+							<!-- Елемент пошуку 16 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"35 кіло надії" - Анна Гавальда
+							</a>
+
+							<!-- Елемент пошуку 17 -->
+							<a href="./pages/test.html" class="searchBlockOption favorite">
+								"Дівчина в поїзді" - Пола Хокінз
+							</a>
+
+							<!-- Елемент пошуку 18 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Тореадори з Васюківки" - Всеволод Нестайко
+							</a>
+
+							<!-- Елемент пошуку 19 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Тигролови" - Багряний Іван
+							</a>
+
+							<!-- Елемент пошуку 20 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Усмішка" - Рей Бредбері
+							</a>
+
+							<!-- Елемент пошуку 21 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Кохання під час холери" - Маркес Габріель Гарсіа
+							</a>
+						</div>
+					</div>
+
+					<!-- Навігація -->
+					<nav class="nav">
+						<li><a href="../index.html" class="navLink">Головна</a></li>
+						<li><a href="./blog.html" class="navLink active">Блог</a></li>
+						<li><a href="./pages/test.html" class="navLink">Контакти</a></li>
+						<li><a href="./pages/test.html" class="navLink">Аудіокниги</a></li>
+						<li><a href="./pages/test.html" class="navLink">ТОП</a></li>
+						<li><a href="./pages/test.html" class="navLink">Найпопулярніші жанри</a></li>
+					</nav>
+
+					<!-- Кнопка для відкриття навігації -->
+					<div class="navRight">
+						<button type="button" class="burgerNav">
+							<span class="burgerLine1"></span>
+							<span class="burgerLine2"></span>
+							<span class="burgerLine3"></span>
+						</button>
+						<a href="./pages/test.html" class="user">
+							<i class="fa-solid fa-user"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Пошук -->
+		<div class="searchBlockOut">
+			<input type="text" class="fieldSearchBookOut" placeholder="Пошук">
+			<div class="searchBlockOutOptions">
+				<!-- Елемент пошуку 1 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Великий Гетсбі" - Френсіс Скотт Фіцджеральд
+				</a>
+
+				<!-- Елемент пошуку 2 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Портрет Доріана" - Ґрея Оскар Вайлд
+				</a>
+
+				<!-- Елемент пошуку 3 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Володар мух" - Вільям Ґолдінґ
+				</a>
+
+				<!-- Елемент пошуку 4 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Тягар пристрастей людських" - Сомерсет Моем
+				</a>
+
+				<!-- Елемент пошуку 5 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Потомки солнца" - Хёнгён Сон
+				</a>
+
+				<!-- Елемент пошуку 6 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Потомки солнца" - Хёнгён Сон
+				</a>
+
+				<!-- Елемент пошуку 7 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Автостопом по Галактиці" - Дуглас Адамс
+				</a>
+
+				<!-- Елемент пошуку 8 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"451 градус за Фаренгейтом" - Рей Бредбері
+				</a>
+
+				<!-- Елемент пошуку 9 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Гаррі Поттер" - Джоан Роулінг
+				</a>
+
+				<!-- Елемент пошуку 10 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Тріумфальна арка" - Еріх Марія Ремарк
+				</a>
+
+				<!-- Елемент пошуку 11 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Квіти для Елджернона" - Деніел Кіз
+				</a>
+
+				<!-- Елемент пошуку 12 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Аліса в Країні Чудес" - Льюїс Керрол
+				</a>
+
+				<!-- Елемент пошуку 13 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Гобсек" - Оноре де Бальзак
+				</a>
+
+				<!-- Елемент пошуку 14 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Сумна посмішка" - Франсуаза Саган
+				</a>
+
+				<!-- Елемент пошуку 15 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"П’ять четвертинок апельсина" - Джоан Харріс
+				</a>
+
+				<!-- Елемент пошуку 16 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"35 кіло надії" - Анна Гавальда
+				</a>
+
+				<!-- Елемент пошуку 17 -->
+				<a href="./pages/test.html" class="searchBlockOutOption favorite">
+					"Дівчина в поїзді" - Пола Хокінз
+				</a>
+
+				<!-- Елемент пошуку 18 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Тореадори з Васюківки" - Всеволод Нестайко
+				</a>
+
+				<!-- Елемент пошуку 19 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Тигролови" - Багряний Іван
+				</a>
+
+				<!-- Елемент пошуку 20 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Усмішка" - Рей Бредбері
+				</a>
+
+				<!-- Елемент пошуку 21 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Кохання під час холери" - Маркес Габріель Гарсіа
+				</a>
+			</div>
+		</div>
+
+		<!-- Основний контент -->
+		<main class="main"></main>
+
+		<!-- Підвал -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footerBody">
+					<p class="copyright">Copyright &copy;2023</p>
+					<p class="authors">
+						<span>Vladyslav Masokha </span>
+						<b>|</b>
+						Dasha Yakymenko
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://kit.fontawesome.com/ff48da9210.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
