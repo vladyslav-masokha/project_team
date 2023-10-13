@@ -12,15 +12,15 @@
 .headerLogo {
 	display: flex;
 	align-items: center;
-	font-size: 0.875em;
+
+	color: var(--light);
+	font-size: 1.3em;
 
 	& img {
 		max-width: 12.5vw;
 	}
 
-	& a {
-		font-size: 1.4em;
-		color: var(--yel);
+	& span {
 		margin: 0 0 0 10px;
 	}
 }
@@ -48,10 +48,10 @@
 }
 
 .navLink {
-	color: var(--yel);
+	color: var(--light);
 
 	&.active {
-		color: var(--light);
+		color: var(--yel);
 	}
 }
 
