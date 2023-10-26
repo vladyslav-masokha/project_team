@@ -1,0 +1,173 @@
+.header {
+	background: linear-gradient(-49deg, #009970, #4c3670);
+}
+
+.headerBody {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.headerLogo {
+	display: flex;
+	align-items: center;
+
+	color: var(--light);
+	font-size: 1.3em;
+
+	& img {
+		max-width: 12.5vw;
+	}
+
+	& span {
+		margin: 0 0 0 10px;
+	}
+}
+
+.nav {
+	position: fixed;
+	right: 0;
+	background: #5d9b5c;
+
+	padding: 5px 15px;
+	transform: translate(200%);
+	transition: transform 0.5s ease-in-out;
+	z-index: 2;
+
+	&.visible {
+		transform: none;
+	}
+
+	& li {
+		padding: 5px;
+		margin: 5px;
+		font-style: italic;
+		font-family: 'cursive', sans-serif;
+	}
+}
+
+.navLink {
+	color: var(--light);
+
+	&.active {
+		color: var(--yel);
+	}
+}
+
+.navRight {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+
+	& i {
+		margin: 0 10px 0 0;
+		color: var(--yel);
+	}
+}
+
+.burgerNav {
+	border: none;
+	padding: 0;
+	background: transparent;
+	width: 30px;
+	height: 20px;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	&.open {
+		.burgerLine2 {
+			opacity: 0;
+		}
+
+		.burgerLine1 {
+			top: 10px;
+			transform: rotate(45deg);
+		}
+
+		.burgerLine3 {
+			top: 10px;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.burgerLine1,
+.burgerLine2,
+.burgerLine3 {
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+.burgerLine1 {
+	top: 0;
+}
+
+.burgerLine2 {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.burgerLine3 {
+	bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.headerLogo {
+		& img {
+			max-width: 5vw;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.headerLogo {
+		& img {
+			max-width: 3vw;
+		}
+	}
+
+	.nav {
+		position: static;
+		display: flex;
+		background: transparent;
+		align-items: center;
+		transform: none;
+	}
+
+	.navLink {
+		color: var(--light);
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			color: var(--yel);
+		}
+
+		&.active {
+			color: var(--yel);
+		}
+	}
+
+	.burgerNav {
+		display: none;
+	}
+
+	.user {
+		& i {
+			color: var(--light);
+			transition: all 0.5s ease-in-out;
+		}
+
+		&:hover {
+			& i {
+				color: var(--yel);
+			}
+		}
+	}
+}

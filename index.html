@@ -1,61 +1,601 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Електронна бібліотека книг</title>
-    <link rel="stylesheet" href="./stylies/styles.css">
-    <link rel="stylesheet" href="./stylies/reset.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Головна - Електронна бібліотека книг</title>
 
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<!-- стилі -->
+	<link rel="stylesheet" href="./styles/reset.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <script src="./JS/main.js" defer></script>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+	<!-- js -->
+	<script src="./js/main.js" defer></script>
 </head>
+
 <body>
-    <div id="root">
-        <header class="header">
-            <div class="wrapper">
-                <div class="headerBody">
-<img src="https://cdn.icon-icons.com/icons2/2979/PNG/512/book_open_book_read_icon_186989.png" width="85px">
-        <h2 class="headerTitle">Електронна бібліотека книг</h2>
-        <div class="container">
-        <div class="col-md-3 col-sm-12 left_coll"> 
-                    <div class="container">dc
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-8 col-md-12">
-                                <div id="sbox">
-                                </div>
+	<div id="root">
+		<!-- шапка -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="headerBody">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+					<!-- логотип -->
+					<a href="./index.html" class="headerLogo">
+						<img src="./img/logo.png" alt="Логотип">
+						<span>Електронна бібліотека книг</span>
+					</a>
 
-                    </div>
+					<!-- пошук -->
+					<div class="searchBlock">
+						<input type="text" class="fieldSearchBook" placeholder="Пошук">
 
-                    <nav class="nav" >
-                        
-         <ul>
-             <li><a href="/" class="navLink" >Головна</a></li>
-             <li><a href="/" class="navLink">Блог</a></li>
-            <li><a href="/" class="navLink">Контакти</a></li>
-            <li><a href="/" class="navLink">Аудіокниги</a></li>
-            <li><a href="/" class="navLink">ТОП</a></li>
-            <li><a href="/" class="navLink">Найпопулярніші жанри</a></li>
-        </ul>
+						<div class="searchBlockOptions">
+							<!-- елемент пошуку 1 -->
+							<a href="./pages/books/The Great Gatsby_Francis Scott Fitzgerald.html" class="searchBlockOption">
+								"Великий Гетсбі" - Френсіс Скотт Фіцджеральд
+							</a>
 
-        </nav>
+							<!-- елемент пошуку 2 -->
+							<a href="./pages/books/Portrait of Dorian_Gray Oscar Wilde.html" class="searchBlockOption">
+								"Портрет Доріана" - Ґрея Оскар Вайлд
+							</a>
 
-         <button type="button" class="burgerNav">
-             <span class="burgerLine1"></span>
-            <span class="burgerLine2"></span>
-            <span class="burgerLine3"></span>
-        </button>
-        <i class="fa-solid fa-user"></i>
-                </div>
-            </div>
-        </header>
-        </div>
- <script src="https://kit.fontawesome.com/93580a0fde.js" crossorigin="anonymous"></script>
+							<!-- елемент пошуку 3 -->
+							<a href="./pages/books/Lord of the Flies_William Golding.html" class="searchBlockOption">
+								"Володар мух" - Вільям Ґолдінґ
+							</a>
+
+							<!-- елемент пошуку 4 -->
+							<a href="./pages/books/The burden of human passions_Somerset Maugham.html" class="searchBlockOption">
+								"Тягар пристрастей людських" - Сомерсет Моем
+							</a>
+
+							<!-- елемент пошуку 5 -->
+							<a href="./pages/books/Descendants of the Sun_Hyungyeong Song.html" class="searchBlockOption">
+								"Потомки солнца" - Хёнгён Сон
+							</a>
+
+							<!-- елемент пошуку 6 -->
+							<a href="./pages/books/Hitchhiker's Guide to the Galaxy_Douglas Adams.html" class="searchBlockOption">
+								"Автостопом по Галактиці" - Дуглас Адамс
+							</a>
+
+							<!-- елемент пошуку 7 -->
+							<a href="./pages/books/451 degrees Fahrenheit_Ray Bradbury.html" class="searchBlockOption">
+								"451 градус за Фаренгейтом" - Рей Бредбері
+							</a>
+
+							<!-- елемент пошуку 8 -->
+							<a href="./pages/books/Harry Potter_Joan Rowling.html" class="searchBlockOption">
+								"Гаррі Поттер" - Джоан Роулінг
+							</a>
+
+							<!-- елемент пошуку 9 -->
+							<a href="./pages/books/Triumphal Arch_Erich Maria Remarque.html" class="searchBlockOption">
+								"Тріумфальна арка" - Еріх Марія Ремарк
+							</a>
+
+							<!-- елемент пошуку 10 -->
+							<a href="./pages/books/Flowers for Algernon_Daniel Keyes.html" class="searchBlockOption">
+								"Квіти для Елджернона" - Деніел Кіз
+							</a>
+
+							<!-- елемент пошуку 11 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Аліса в Країні Чудес" - Льюїс Керрол
+							</a>
+
+							<!-- елемент пошуку 12 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Гобсек" - Оноре де Бальзак
+							</a>
+
+							<!-- елемент пошуку 13 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Сумна посмішка" - Франсуаза Саган
+							</a>
+
+							<!-- елемент пошуку 14 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"П’ять четвертинок апельсина" - Джоан Харріс
+							</a>
+
+							<!-- елемент пошуку 15 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"35 кіло надії" - Анна Гавальда
+							</a>
+
+							<!-- елемент пошуку 16 -->
+							<a href="./pages/test.html" class="searchBlockOption favorite">
+								"Дівчина в поїзді" - Пола Хокінз
+							</a>
+
+							<!-- елемент пошуку 17 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Тореадори з Васюківки" - Всеволод Нестайко
+							</a>
+
+							<!-- елемент пошуку 18 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Тигролови" - Багряний Іван
+							</a>
+
+							<!-- елемент пошуку 19 -->
+							<a href="./pages/test.html" class="searchBlockOption">
+								"Усмішка" - Рей Бредбері
+							</a>
+
+							<!-- елемент пошуку 20 -->
+							<a href="./pages/test.html" class="searchBlockOption favorite2">
+								"Кохання під час холери" - Маркес Габріель Гарсіа
+							</a>
+						</div>
+					</div>
+
+					<!-- навігація -->
+					<nav class="nav">
+						<li><a href="./index.html" class="navLink active">Головна</a></li>
+						<li><a href="./pages/blog.html" class="navLink">Блог</a></li>
+						<li><a href="./pages/contacts.html" class="navLink">Контакти</a></li>
+						<li><a href="./pages/test.html" class="navLink">Аудіокниги</a></li>
+						<li><a href="./pages/test.html" class="navLink">ТОП</a></li>
+						<li><a href="./pages/test.html" class="navLink">Найпопулярніші жанри</a></li>
+					</nav>
+
+					<!-- кнопка для відкриття навігації -->
+					<div class="navRight">
+						<button type="button" class="burgerNav">
+							<span class="burgerLine1"></span>
+							<span class="burgerLine2"></span>
+							<span class="burgerLine3"></span>
+						</button>
+						<a href="./pages/login.html" class="user">
+							<i class="fa-solid fa-user"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- пошук -->
+		<div class="searchBlockOut">
+			<input type="text" class="fieldSearchBookOut" placeholder="Пошук">
+
+			<div class="searchBlockOutOptions">
+				<!-- елемент пошуку 1 -->
+				<a href="./pages/books/The Great Gatsby_Francis Scott Fitzgerald.html" class="searchBlockOutOption">
+					"Великий Гетсбі" - Френсіс Скотт Фіцджеральд
+				</a>
+
+				<!-- елемент пошуку 2 -->
+				<a href="./pages/books/Portrait of Dorian_Gray Oscar Wilde.html" class="searchBlockOutOption">
+					"Портрет Доріана" - Ґрея Оскар Вайлд
+				</a>
+
+				<!-- елемент пошуку 3 -->
+				<a href="./pages/books/Lord of the Flies_William Golding.html" class="searchBlockOutOption">
+					"Володар мух" - Вільям Ґолдінґ
+				</a>
+
+				<!-- елемент пошуку 4 -->
+				<a href="./pages/books/The burden of human passions_Somerset Maugham.html" class="searchBlockOutOption">
+					"Тягар пристрастей людських" - Сомерсет Моем
+				</a>
+
+				<!-- елемент пошуку 5 -->
+				<a href="./pages/books/Descendants of the Sun_Hyungyeong Song.html" class="searchBlockOutOption">
+					"Потомки солнца" - Хёнгён Сон
+				</a>
+
+				<!-- елемент пошуку 6 -->
+				<a href="./pages/books/Hitchhiker's Guide to the Galaxy_Douglas Adams.html" class="searchBlockOutOption">
+					"Автостопом по Галактиці" - Дуглас Адамс
+				</a>
+
+				<!-- елемент пошуку 7 -->
+				<a href="./pages/books/451 degrees Fahrenheit_Ray Bradbury.html" class="searchBlockOutOption">
+					"451 градус за Фаренгейтом" - Рей Бредбері
+				</a>
+
+				<!-- елемент пошуку 8 -->
+				<a href="./pages/books/Harry Potter_Joan Rowling.html" class="searchBlockOutOption">
+					"Гаррі Поттер" - Джоан Роулінг
+				</a>
+
+				<!-- елемент пошуку 9 -->
+				<a href="./pages/books/Triumphal Arch_Erich Maria Remarque.html" class="searchBlockOutOption">
+					"Тріумфальна арка" - Еріх Марія Ремарк
+				</a>
+
+				<!-- елемент пошуку 10 -->
+				<a href="./pages/books/Flowers for Algernon_Daniel Keyes.html" class="searchBlockOutOption">
+					"Квіти для Елджернона" - Деніел Кіз
+				</a>
+
+				<!-- елемент пошуку 11 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Аліса в Країні Чудес" - Льюїс Керрол
+				</a>
+
+				<!-- елемент пошуку 12 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Гобсек" - Оноре де Бальзак
+				</a>
+
+				<!-- елемент пошуку 13 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Сумна посмішка" - Франсуаза Саган
+				</a>
+
+				<!-- елемент пошуку 14 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"П’ять четвертинок апельсина" - Джоан Харріс
+				</a>
+
+				<!-- елемент пошуку 15 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"35 кіло надії" - Анна Гавальда
+				</a>
+
+				<!-- елемент пошуку 16 -->
+				<a href="./pages/test.html" class="searchBlockOutOption favorite">
+					"Дівчина в поїзді" - Пола Хокінз
+				</a>
+
+				<!-- елемент пошуку 17 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Тореадори з Васюківки" - Всеволод Нестайко
+				</a>
+
+				<!-- елемент пошуку 18 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Тигролови" - Багряний Іван
+				</a>
+
+				<!-- елемент пошуку 19 -->
+				<a href="./pages/test.html" class="searchBlockOutOption">
+					"Усмішка" - Рей Бредбері
+				</a>
+
+				<!-- елемент пошуку 20 -->
+				<a href="./pages/test.html" class="searchBlockOutOption favorite2">
+					"Кохання під час холери" - Маркес Габріель Гарсіа
+				</a>
+			</div>
+		</div>
+
+		<!-- основний контент -->
+		<main class="main">
+			<section class="sliderBlock">
+				<!-- слайд 1 -->
+				<a href="./pages/books/The Great Gatsby_Francis Scott Fitzgerald.html" class="slideBook">
+					<img src="./img/slides/Великий Гетсбі.jpg" alt="Ілюстрація: Великий Гетсбі">
+					<p>"Великий Гетсбі" - Френсіс Скотт Фіцджеральд</p>
+				</a>
+
+				<!-- слайд 2 -->
+				<a href="./pages/books/Portrait of Dorian_Gray Oscar Wilde.html" class="slideBook">
+					<img src="./img/slides/Портрет Доріана.jpg" alt="Ілюстрація: Портрет Доріана">
+					<p>"Портрет Доріана" - Ґрея Оскар Вайлд</p>
+				</a>
+
+				<!-- слайд 3 -->
+				<a href="./pages/books/Lord of the Flies_William Golding.html" class="slideBook">
+					<img src="./img/slides/Володар мух.jpg" alt="Ілюстрація: Володар мух">
+					<p>"Володар мух" - Вільям Ґолдінґ</p>
+				</a>
+
+				<!-- слайд 4 -->
+				<a href="./pages/books/The burden of human passions_Somerset Maugham.html" class="slideBook">
+					<img src="./img/slides/Тягар пристрастей людських.jpg" alt="Ілюстрація: Тягар пристрастей людських">
+					<p>"Тягар пристрастей людських" - Сомерсет Моем</p>
+				</a>
+
+				<!-- слайд 5 -->
+				<a href="./pages/books/Descendants of the Sun_Hyungyeong Song.html" class="slideBook">
+					<img src="./img/slides/Потомки солнца.jpg" alt="Ілюстрація: Потомки солнца">
+					<p>"Потомки солнца" - Хёнгён Сон</p>
+				</a>
+
+				<!-- слайд 6 -->
+				<a href="./pages/books/Hitchhiker's Guide to the Galaxy_Douglas Adams.html" class="slideBook">
+					<img src="./img/slides/Автостопом по Галактиці.jpg" alt="Ілюстрація: Автостопом по Галактиці">
+					<p>"Автостопом по Галактиці" - Дуглас Адамс</p>
+				</a>
+
+				<!-- слайд 7 -->
+				<a href="./pages/books/451 degrees Fahrenheit_Ray Bradbury.html" class="slideBook">
+					<img src="./img/slides/451 градус за Фаренгейтом.jpg" alt="Ілюстрація: 451 градус за Фаренгейтом">
+					<p>"451 градус за Фаренгейтом" - Рей Бредбері</p>
+				</a>
+
+				<!-- слайд 8 -->
+				<a href="./pages/books/Harry Potter_Joan Rowling.html" class="slideBook">
+					<img src="./img/slides/Гаррі Поттер.jpg" alt="Ілюстрація: Гаррі Поттер">
+					<p>"Гаррі Поттер" - Джоан Роулінг</p>
+				</a>
+
+				<!-- слайд 9 -->
+				<a href="./pages/books/Triumphal Arch_Erich Maria Remarque.html" class="slideBook">
+					<img src="./img/slides/Тріумфальна арка.jpg" alt="Ілюстрація: Тріумфальна арка">
+					<p>"Тріумфальна арка" - Еріх Марія Ремарк</p>
+				</a>
+
+				<!-- слайд 10 -->
+				<a href="./pages/books/Flowers for Algernon_Daniel Keyes.html" class="slideBook">
+					<img src="./img/slides/Квіти для Елджернона.jpg" alt="Ілюстрація: Квіти для Елджернона">
+					<p>"Квіти для Елджернона" - Деніел Кіз</p>
+				</a>
+			</section>
+
+			<section class="authours">
+				<div class="wrapper">
+					<dl class="authoursBody">
+						<!-- A -->
+						<dt>А</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Анна Гавальда</a>
+						</dd>
+
+						<!-- Б -->
+						<dt>Б</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Багряний Іван</a>
+						</dd>
+
+						<!-- В -->
+						<dt>В</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Вільям Ґолдінґ</a>
+						</dd>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Всеволод Нестайко</a>
+						</dd>
+
+						<!-- Г -->
+						<dt>Г</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Ґ -->
+						<dt>Ґ</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Ґрея Оскар Вайлд</a>
+						</dd>
+
+						<!-- Д -->
+						<dt>Д</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Дуглас Адамс</a>
+						</dd>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Джоан Роулінг</a>
+						</dd>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Деніел Кіз</a>
+						</dd>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Джоан Харріс</a>
+						</dd>
+
+						<!-- Е -->
+						<dt>Е</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Еріх Марія Ремарк</a>
+						</dd>
+
+						<!-- Є -->
+						<dt>Є</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Ж -->
+						<dt>Ж</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- З -->
+						<dt>З</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- И -->
+						<dt>И</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- І -->
+						<dt>І</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Ї -->
+						<dt>Ї</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Й -->
+						<dt>Й</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- К -->
+						<dt>К</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Л -->
+						<dt>Л</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Льюїс Керрол</a>
+						</dd>
+
+						<!-- М -->
+						<dt>М</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html" class="favorite2">Маркес Габріель Гарсіа</a>
+						</dd>
+
+						<!-- Н -->
+						<dt>Н</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- О -->
+						<dt>О</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Оноре де Бальзак</a>
+						</dd>
+
+						<!-- П -->
+						<dt>П</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html" class="favorite">Пола Хокінз</a>
+						</dd>
+
+						<!-- Р -->
+						<dt>Р</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Рей Бредбері</a>
+						</dd>
+
+						<!-- С -->
+						<dt>Р</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Сомерсет Моем</a>
+						</dd>
+
+						<!-- Т -->
+						<dt>Т</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- У -->
+						<dt>У</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Ф -->
+						<dt>Ф</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Френсіс Скотт Фіцджеральд</a>
+						</dd>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Франсуаза Саган</a>
+						</dd>
+
+						<!-- Х -->
+						<dt>Х</dt>
+						<dd>
+							<i class="fa-solid fa-user-large"></i>
+							<a href="./pages/test.html">Хёнгён Сон</a>
+						</dd>
+
+						<!-- Ц -->
+						<dt>Ц</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Ш -->
+						<dt>Ш</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Щ -->
+						<dt>Щ</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Ю -->
+						<dt>Ю</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+
+						<!-- Я -->
+						<dt>Я</dt>
+						<dd>
+							<i class="fa-solid fa-user-large nd"></i>
+							<a href="./pages/test.html">Не знайдено!</a>
+						</dd>
+					</dl>
+				</div>
+			</section>
+		</main>
+
+		<!-- підвал -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footerBody">
+					<p class="copyright">Copyright &copy;2023</p>
+					<p class="authors">
+						<span>Vladyslav Masokha </span>
+						<b>|</b>
+						Dasha Yakymenko
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://kit.fontawesome.com/ff48da9210.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

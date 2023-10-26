@@ -1,0 +1,30 @@
+.footer {
+	margin-top: auto;
+	color: #fff;
+	background: #00003f;
+}
+
+.footerBody {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 15px 0;
+}
+
+.copyright {
+	font-size: 0.875em;
+}
+
+.authors {
+	font-size: 0.625em;
+	color: yellow;
+
+	& span {
+		color: var(--blue);
+	}
+
+	& b {
+		color: #fff;
+	}
+}
