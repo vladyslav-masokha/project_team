@@ -4,7 +4,7 @@
 	align-items: center;
 }
 
-.loginuser{
+.loginuser {
 	align-items: center;
 
 	color: var(--light);
@@ -16,5 +16,5 @@
 
 	& span {
 		margin: 0 0 5 10px;
-}
+	}
 }
