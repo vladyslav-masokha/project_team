@@ -1,0 +1,20 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.loginuser {
+	align-items: center;
+
+	color: var(--light);
+	font-size: 1em;
+
+	& img {
+		max-width: 5vw;
+	}
+
+	& span {
+		margin: 0 0 5 10px;
+	}
+}
