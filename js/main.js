@@ -91,11 +91,29 @@ const searchBooksOutHeader = () => {
 	});
 };
 
+const searchAuthours = () => {
+	const fieldSearch = document.querySelector('.fieldSearchAuthours');
+	const searchElements = document.querySelectorAll('.searchAuthoursOption');
+
+	fieldSearch.addEventListener('input', () => {
+		const inputValue = fieldSearch.value.toLowerCase();
+
+		searchElements.forEach(authour => {
+			const authourName = authour.textContent.toLowerCase();
+
+			authourName.includes(inputValue)
+				? (authour.style.display = 'block')
+				: (authour.style.display = 'none');
+		});
+	});
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+	positionNav();
 	openNavigation();
 	searchBooksInHeader();
 	searchBooksOutHeader();
-	positionNav();
+	searchAuthours();
 });
 
 window.addEventListener('resize', positionNav);
