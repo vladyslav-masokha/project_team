@@ -2,6 +2,8 @@
 window.addEventListener('load', () => {
 	document.querySelector('#loader').style.display = 'none';
 	document.querySelector('#root').style.display = 'flex';
+
+	positionNav();
 });
 
 // position navigation
@@ -9,7 +11,7 @@ const positionNav = () => {
 	const headerEl = document.querySelector('.header');
 	const navEl = document.querySelector('.nav');
 	const headerHeight = headerEl.offsetHeight;
-	
+
 	navEl.style.top = headerHeight - 1 + 'px';
 };
 
@@ -120,7 +122,6 @@ const searchAuthours = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-	positionNav();
 	openNavigation();
 	searchBooksInHeader();
 	searchBooksOutHeader();
