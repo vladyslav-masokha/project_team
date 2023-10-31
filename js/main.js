@@ -9,7 +9,7 @@ const positionNav = () => {
 	const headerEl = document.querySelector('.header');
 	const navEl = document.querySelector('.nav');
 	const headerHeight = headerEl.offsetHeight;
-
+	
 	navEl.style.top = headerHeight - 1 + 'px';
 };
 
