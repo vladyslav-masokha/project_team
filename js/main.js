@@ -1,3 +1,10 @@
+// loader on laod page
+window.addEventListener('load', () => {
+	document.querySelector('#loader').style.display = 'none';
+	document.querySelector('#root').style.display = 'flex';
+});
+
+// position navigation
 const positionNav = () => {
 	const headerEl = document.querySelector('.header');
 	const navEl = document.querySelector('.nav');
@@ -6,6 +13,7 @@ const positionNav = () => {
 	navEl.style.top = headerHeight - 1 + 'px';
 };
 
+// open navigation
 const openNavigation = () => {
 	const burgerNavEl = document.querySelector('.burgerNav');
 
@@ -15,6 +23,7 @@ const openNavigation = () => {
 	});
 };
 
+// search books in header
 const searchBooksInHeader = () => {
 	const fieldSearch = document.querySelector('.headerBody .fieldSearchBook');
 	const searchOptions = document.querySelector(
@@ -55,6 +64,7 @@ const searchBooksInHeader = () => {
 	});
 };
 
+// search books out header
 const searchBooksOutHeader = () => {
 	const fieldSearch = document.querySelector('.fieldSearchBookOut');
 	const searchOptions = document.querySelector('.searchBlockOutOptions');
@@ -91,6 +101,7 @@ const searchBooksOutHeader = () => {
 	});
 };
 
+// search authours
 const searchAuthours = () => {
 	const fieldSearch = document.querySelector('.fieldSearchAuthours');
 	const searchElements = document.querySelectorAll('.searchAuthoursOption');
@@ -118,6 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('resize', positionNav);
 
+// slider
 $('.sliderBlock').slick({
 	slidesToScroll: 1,
 	dots: false,

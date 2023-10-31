@@ -6,7 +6,8 @@
 @import './styles/footer.css';
 
 :root {
-	--light: #f4f9f8;
+	/* --light: #f4f9f8; */
+	--light: #fff;
 	--dark: #222;
 	--silv: #ccc;
 
@@ -16,7 +17,7 @@
 
 #root {
 	min-height: 100vh;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	overflow: hidden;
 }
@@ -54,4 +55,14 @@ main {
 
 .favorite2 {
 	color: #8c99f0 !important;
+}
+
+#loader {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	background: var(--light);
 }
