@@ -11,24 +11,54 @@
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
 	<div class="login">
-		<a href="login.html " class="loginuser">
-			<img src="https://img.freepik.com/premium-vector/3d-realistic-person-or-people_165488-4529.jpg" alt="Логотип">
-		</a>
+
+			<img src="https://img.freepik.com/premium-vector/3d-realistic-person-or-people_165488-4529.jpg" class="loginUser" alt="Логотип">
 		<div class="login form">
-			<form>
+			<form>		
 				<div class="form">
-	<input class="username" type="text" name="ім'я користувача" maxlength="14" minlength="3" id="ім'я користувача" placeholder=" Ім'я користувача " >
+					<label>
+						<input 
+							class="username" 
+							type="text" 
+							name="ім'я користувача" 
+							maxlength="14" 
+							minlength="3" 
+							id="ім'я користувача" 
+							placeholder=" Ім'я користувача " 
+						/>
+						<i class="fa-solid fa-user"></i>
+					</label>
 				</div>
 	<div class="form">
-		<input class="username" type="password" name="Пароль" minlength="6" id="password" placeholder="Пароль">
+<label>
+		<input 
+		class="password"
+		 type="password" 
+		 name="Пароль"
+		  minlength="6" 
+			id="password"
+			 placeholder="Пароль"/>
+		<i class="fa-solid fa-lock"></i>
+	</label>
 	</div>
+	<div class="remember-forgot">
+		<label class="remember"><input type="checkbox">Запам'ятай мене</label>
+		<a href="">Забули пароль?</a>
+	</div>
+
 	<div class="form">
 		<button class="account" type="submit"> Вхід в аккаунт</button>
 	</div>
-	
+	<div class="register-form">
+		<p>Не маєте аккаунта?<a href="" >  Зареєструватися  </a> </p>
+	</div>
+
 			</form>
 		</div>
 	</div>
+	<script src="https://kit.fontawesome.com/93580a0fde.js" crossorigin="anonymous"></script>
 </body>
+</html>
 	
