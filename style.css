@@ -3,6 +3,7 @@
 @import './styles/search.css';
 @import './styles/slider.css';
 @import'./styles/login.css';
+@import'./styles/register.css';
 @import './styles/footer.css';
 
 :root {
@@ -47,6 +48,7 @@ main {
 		text-align: center;
 	}
 }
+/* import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js" */
 
 .authours {
 	margin: 60px 0;

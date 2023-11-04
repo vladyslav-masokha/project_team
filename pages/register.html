@@ -9,7 +9,6 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="../styles/reset.css">
 	<link rel="stylesheet" href="../style.css">
-	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
 
 	<!-- favicon -->
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
@@ -272,10 +271,10 @@
 
 		<!-- main content -->
 		<main class="main">
-			<!-- login form -->
-			<section class="login">
+			<!-- register form -->
+			<section class="register">
 				<form action="#" class="form">
-					<a href="./login.html" class="userLogo">
+					<a href="./register.html" class="userLogo">
 						<img src="../img/userLogo.jpg" alt="Користувач">
 					</a>
 
@@ -287,6 +286,13 @@
 							<i class="fa-solid fa-user"></i>
 						</div>
 
+						<!-- email -->
+						<div class="formGroup">
+							<input class="userEmail" type="text" name="email" id="email" maxlength="14" minlength="3"
+								placeholder="Електронна пошта" required />
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+
 						<!-- password -->
 						<div class="formGroup">
 							<input class="password" type="password" name="password" minlength="6" minlength="14" id="password"
@@ -296,23 +302,14 @@
 
 						<!-- button for register new account -->
 						<div class="formGroup">
-							<button type="submit" class="loginBtn">Зареєструватися</button>
+							<button type="submit" class="registerBtn">Зареєструватися</button>
 						</div>
 
-						<!-- remeber & forgot password -->
-						<div class="rememberForgot">
-							<label class="remember">
-								<input type="checkbox" />
-								Запам'ятай мене
-							</label>
-							<a href="#">Забули пароль?</a>
-						</div>
-
-						<!-- register new account -->
-						<div class="registerAccount">
+						<!-- login in account -->
+						<div class="loginAccount">
 							<p>
-								Не маєте аккаунта?
-								<a href="#">Зареєструватися</a>
+								Маєте аккаунт?
+								<a href="./login.html">Увійти</a>
 							</p>
 						</div>
 					</div>
@@ -336,7 +333,6 @@
 	</div>
 
 	<script src="https://kit.fontawesome.com/93580a0fde.js" crossorigin="anonymous"></script>
-	<script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
 </body>
 
 </html>
