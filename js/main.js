@@ -93,17 +93,18 @@ const searchBooksOutHeader = () => {
 
 const searchAuthours = () => {
 	const fieldSearch = document.querySelector('.fieldSearchAuthours');
-	const searchElements = document.querySelectorAll('.searchAuthoursOption');
+	const searchAuthour = document.querySelectorAll('.searchAuthoursOption dt');
 
 	fieldSearch.addEventListener('input', () => {
 		const inputValue = fieldSearch.value.toLowerCase();
 
-		searchElements.forEach(authour => {
+		searchAuthour.forEach(authour => {
 			const authourName = authour.textContent.toLowerCase();
+			const parentElement = authour.parentElement;
 
 			authourName.includes(inputValue)
-				? (authour.style.display = 'block')
-				: (authour.style.display = 'none');
+				? (parentElement.style.display = 'block')
+				: (parentElement.style.display = 'none');
 		});
 	});
 };
