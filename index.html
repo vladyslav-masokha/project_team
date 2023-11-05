@@ -16,9 +16,24 @@
 
 	<!-- js -->
 	<script src="./js/main.js" defer></script>
+
+	<style>
+		#loader {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			background: var(--light);
+		}
+	</style>
 </head>
 
 <body>
+	<div id="loader">
+		<img src="./img/loader.gif" alt="loader">
+	</div>
 	<div id="root">
 		<!-- header -->
 		<header class="header">

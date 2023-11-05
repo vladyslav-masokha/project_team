@@ -1,3 +1,9 @@
+// loader on laod page
+window.addEventListener('load', () => {
+	document.querySelector('#loader').style.display = 'none';
+	document.querySelector('#root').style.display = 'flex';
+});
+
 const positionNav = () => {
 	const headerEl = document.querySelector('.header');
 	const navEl = document.querySelector('.nav');

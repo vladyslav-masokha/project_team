@@ -3,12 +3,12 @@
 @import './styles/search.css';
 @import './styles/slider.css';
 @import './styles/authours.css';
-@import'./styles/login.css';
-@import'./styles/register.css';
+@import './styles/login.css';
+@import './styles/register.css';
 @import './styles/footer.css';
 
 :root {
-	--light: #f4f9f8;
+	--light: #fff;
 	--dark: #222;
 	--silv: #ccc;
 
@@ -18,7 +18,7 @@
 
 #root {
 	min-height: 100vh;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	overflow: hidden;
 }
@@ -48,48 +48,4 @@ main {
 		font-weight: 400;
 		text-align: center;
 	}
-}
-/* import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js" */
-
-.authours {
-	margin: 60px 0;
-}
-
-.authoursBody {
-	position: relative;
-	height: 300px;
-	overflow-y: scroll;
-
-	& dt {
-		background: #f0e68c;
-		position: sticky;
-		top: 0;
-
-		padding: 5px 15px;
-	}
-
-	& dd {
-		padding: 5px 15px;
-	}
-
-	& a {
-		color: var(--dark);
-		margin: 0 0 0 5px;
-	}
-
-	& i {
-		color: #41a4fa;
-	}
-
-	.nd {
-		color: #f00;
-	}
-}
-
-.favorite {
-	color: #f00 !important;
-}
-
-.favorite2 {
-	color: #8c99f0 !important;
 }
