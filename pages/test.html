@@ -4,12 +4,306 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Тестова сторінка</title>
+	<title>Тестова сторінка - BookStack</title>
+
+	<!-- styles -->
+	<link rel="stylesheet" href="../styles/reset.css">
+	<link rel="stylesheet" href="../style.css">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+	<!-- js -->
+	<script src="../js/main.js" defer></script>
+
+	<style>
+		#loader {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			background: var(--light);
+		}
+	</style>
 </head>
 
 <body>
+	<!-- loader -->
+	<div id="loader">
+		<img src="../img/loader.gif" alt="loader">
+	</div>
+
 	<div id="root">
-		<h2>Тестова сторінка</h2>
+		<!-- header -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="headerBody">
+
+					<!-- logo -->
+					<a href="../index.html" class="headerLogo">
+						<img src="../img/logo.png" alt="Логотип">
+						<span>BookStack</span>
+					</a>
+
+					<!-- search -->
+					<div class="searchBlock">
+						<input type="text" class="fieldSearchBook" placeholder="Пошук">
+
+						<div class="searchBlockOptions">
+							<!-- element 1 -->
+							<a href="./books/The Great Gatsby_Francis Scott Fitzgerald.html" class="searchBlockOption">
+								"Великий Гетсбі" - Френсіс Скотт Фіцджеральд
+							</a>
+
+							<!-- element 2 -->
+							<a href="./books/Portrait of Dorian_Gray Oscar Wilde.html" class="searchBlockOption">
+								"Портрет Доріана" - Ґрея Оскар Вайлд
+							</a>
+
+							<!-- element 3 -->
+							<a href="./books/Lord of the Flies_William Golding.html" class="searchBlockOption">
+								"Володар мух" - Вільям Ґолдінґ
+							</a>
+
+							<!-- element 4 -->
+							<a href="./books/The burden of human passions_Somerset Maugham.html" class="searchBlockOption">
+								"Тягар пристрастей людських" - Сомерсет Моем
+							</a>
+
+							<!-- element 5 -->
+							<a href="./books/Descendants of the Sun_Hyungyeong Song.html" class="searchBlockOption">
+								"Потомки солнца" - Хёнгён Сон
+							</a>
+
+							<!-- element 6 -->
+							<a href="./books/Hitchhiker's Guide to the Galaxy_Douglas Adams.html" class="searchBlockOption">
+								"Автостопом по Галактиці" - Дуглас Адамс
+							</a>
+
+							<!-- element 7 -->
+							<a href="./books/451 degrees Fahrenheit_Ray Bradbury.html" class="searchBlockOption">
+								"451 градус за Фаренгейтом" - Рей Бредбері
+							</a>
+
+							<!-- element 8 -->
+							<a href="./books/Harry Potter_Joan Rowling.html" class="searchBlockOption">
+								"Гаррі Поттер" - Джоан Роулінг
+							</a>
+
+							<!-- element 9 -->
+							<a href="./books/Triumphal Arch_Erich Maria Remarque.html" class="searchBlockOption">
+								"Тріумфальна арка" - Еріх Марія Ремарк
+							</a>
+
+							<!-- element 10 -->
+							<a href="./books/Flowers for Algernon_Daniel Keyes.html" class="searchBlockOption">
+								"Квіти для Елджернона" - Деніел Кіз
+							</a>
+
+							<!-- element 11 -->
+							<a href="./test.html" class="searchBlockOption">
+								"Аліса в Країні Чудес" - Льюїс Керрол
+							</a>
+
+							<!-- element 12 -->
+							<a href="./test.html" class="searchBlockOption">
+								"Гобсек" - Оноре де Бальзак
+							</a>
+
+							<!-- element 13 -->
+							<a href="./test.html" class="searchBlockOption">
+								"Сумна посмішка" - Франсуаза Саган
+							</a>
+
+							<!-- element 14 -->
+							<a href="./test.html" class="searchBlockOption">
+								"П’ять четвертинок апельсина" - Джоан Харріс
+							</a>
+
+							<!-- element 15 -->
+							<a href="./test.html" class="searchBlockOption">
+								"35 кіло надії" - Анна Гавальда
+							</a>
+
+							<!-- element 16 -->
+							<a href="./test.html" class="searchBlockOption favorite">
+								"Дівчина в поїзді" - Пола Хокінз
+							</a>
+
+							<!-- element 17 -->
+							<a href="./test.html" class="searchBlockOption">
+								"Тореадори з Васюківки" - Всеволод Нестайко
+							</a>
+
+							<!-- element 18 -->
+							<a href="./test.html" class="searchBlockOption">
+								"Тигролови" - Багряний Іван
+							</a>
+
+							<!-- element 19 -->
+							<a href="./test.html" class="searchBlockOption">
+								"Усмішка" - Рей Бредбері
+							</a>
+
+							<!-- element 20 -->
+							<a href="./test.html" class="searchBlockOption favorite2">
+								"Кохання під час холери" - Маркес Габріель Гарсіа
+							</a>
+						</div>
+					</div>
+
+					<!-- navigation -->
+					<nav class="nav">
+						<li><a href="../index.html" class="navLink">Головна</a></li>
+						<li><a href="./blog.html" class="navLink active">Блог</a></li>
+						<li><a href="./contacts.html" class="navLink">Контакти</a></li>
+						<li><a href="./test.html" class="navLink">Аудіокниги</a></li>
+						<li><a href="./test.html" class="navLink">ТОП</a></li>
+						<li><a href="./test.html" class="navLink">Найпопулярніші жанри</a></li>
+					</nav>
+
+					<!-- burger -->
+					<div class="navRight">
+						<button type="button" class="burgerNav">
+							<span class="burgerLine1"></span>
+							<span class="burgerLine2"></span>
+							<span class="burgerLine3"></span>
+						</button>
+						<a href="./login.html" class="user">
+							<i class="fa-solid fa-user"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- search -->
+		<div class="searchBlockOut">
+			<input type="text" class="fieldSearchBookOut" placeholder="Пошук">
+
+			<div class="searchBlockOutOptions">
+				<!-- element 1 -->
+				<a href="./books/The Great Gatsby_Francis Scott Fitzgerald.html" class="searchBlockOutOption">
+					"Великий Гетсбі" - Френсіс Скотт Фіцджеральд
+				</a>
+
+				<!-- element 2 -->
+				<a href="./books/Portrait of Dorian_Gray Oscar Wilde.html" class="searchBlockOutOption">
+					"Портрет Доріана" - Ґрея Оскар Вайлд
+				</a>
+
+				<!-- element 3 -->
+				<a href="./books/Lord of the Flies_William Golding.html" class="searchBlockOutOption">
+					"Володар мух" - Вільям Ґолдінґ
+				</a>
+
+				<!-- element 4 -->
+				<a href="./books/The burden of human passions_Somerset Maugham.html" class="searchBlockOutOption">
+					"Тягар пристрастей людських" - Сомерсет Моем
+				</a>
+
+				<!-- element 5 -->
+				<a href="./books/Descendants of the Sun_Hyungyeong Song.html" class="searchBlockOutOption">
+					"Потомки солнца" - Хёнгён Сон
+				</a>
+
+				<!-- element 6 -->
+				<a href="./books/Hitchhiker's Guide to the Galaxy_Douglas Adams.html" class="searchBlockOutOption">
+					"Автостопом по Галактиці" - Дуглас Адамс
+				</a>
+
+				<!-- element 7 -->
+				<a href="./books/451 degrees Fahrenheit_Ray Bradbury.html" class="searchBlockOutOption">
+					"451 градус за Фаренгейтом" - Рей Бредбері
+				</a>
+
+				<!-- element 8 -->
+				<a href="./books/Harry Potter_Joan Rowling.html" class="searchBlockOutOption">
+					"Гаррі Поттер" - Джоан Роулінг
+				</a>
+
+				<!-- element 9 -->
+				<a href="./books/Triumphal Arch_Erich Maria Remarque.html" class="searchBlockOutOption">
+					"Тріумфальна арка" - Еріх Марія Ремарк
+				</a>
+
+				<!-- element 10 -->
+				<a href="./books/Flowers for Algernon_Daniel Keyes.html" class="searchBlockOutOption">
+					"Квіти для Елджернона" - Деніел Кіз
+				</a>
+
+				<!-- element 11 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"Аліса в Країні Чудес" - Льюїс Керрол
+				</a>
+
+				<!-- element 12 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"Гобсек" - Оноре де Бальзак
+				</a>
+
+				<!-- element 13 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"Сумна посмішка" - Франсуаза Саган
+				</a>
+
+				<!-- element 14 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"П’ять четвертинок апельсина" - Джоан Харріс
+				</a>
+
+				<!-- element 15 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"35 кіло надії" - Анна Гавальда
+				</a>
+
+				<!-- element 16 -->
+				<a href="./test.html" class="searchBlockOutOption favorite">
+					"Дівчина в поїзді" - Пола Хокінз
+				</a>
+
+				<!-- element 17 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"Тореадори з Васюківки" - Всеволод Нестайко
+				</a>
+
+				<!-- element 18 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"Тигролови" - Багряний Іван
+				</a>
+
+				<!-- element 19 -->
+				<a href="./test.html" class="searchBlockOutOption">
+					"Усмішка" - Рей Бредбері
+				</a>
+
+				<!-- element 20 -->
+				<a href="./test.html" class="searchBlockOutOption favorite2">
+					"Кохання під час холери" - Маркес Габріель Гарсіа
+				</a>
+			</div>
+		</div>
+
+		<!-- main content -->
+		<main class="main">
+			<h3>Тестова сторінка</h3>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footerBody">
+					<p class="copyright">Copyright &copy;2023</p>
+					<p class="authors">
+						<span>Vladyslav Masokha </span>
+						<b>|</b>
+						Dasha Yakymenko
+					</p>
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
 
